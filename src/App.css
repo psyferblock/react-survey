@@ -47,5 +47,7 @@ display:block
 .form-button{
   display: block;
   font-family: "karla",sans-serif;
+  background: linear-gradient(90deg,rgb(147, 30, 154) 1%,rgb(173, 140, 176) 100%);
+
 
 }

@@ -4,13 +4,16 @@ import '../App.css';
 import NavBarAdmin from '../components/NavBarAdmin';
 import NavBarUser from '../components/NavBarUser';
 import Questions from '../components/Questions';
+import Main from '../components/Main'
 
-import { useState } from 'react';
+
 
 export default function NavBar() {
 
 
-    const [navBar,getNavbar] =useState("null")
+    const [navBar,getNavbar] =React.useState("something dude")
+    console.log(React.useState())
+        console.log(navBar)
 
    
 
@@ -30,7 +33,10 @@ export default function NavBar() {
                     </li>     
                 </ul>
             </div>
+
         </header>
+        <Main/>
+
         
     </>
   )
