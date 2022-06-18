@@ -11,7 +11,24 @@ export default function NavBarAdmin() {
 
           
     const adminLogin = async ()=>{
-           
+    //         const url ="http://127.0.0.1:8000/v1/admin/login"
+    //         const task ={"email":email,"password":password}
+    //         const res =await fetch (url),{
+    //             method:"POST",
+    //             headers:{
+    //                 "content-type":"application/json"
+    //             },
+    //             body:JSON.stringify(task)
+    //             }
+            
+    //         const data =await res.json()
+    //         if (data["token"]){
+    //             localStorage.setItem("token",data["token"]);
+    //             window.location.href="/main"
+    //         }else{
+        //         alert("wrong email/password")
+        //     }
+        //     return data
 
        
         } 
