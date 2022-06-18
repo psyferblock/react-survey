@@ -1,25 +1,34 @@
-import React from 'react'
+import React ,{useState,useEffect} from 'react'
 import '../App.css';
 import Questions from './Questions';
 
 
+
 export default function NavBarAdmin() {
   
-    function adminClick(){
-        console.log("admin! i choose you!!!!")
-    }
+    const [email,setEmail]=useState({})
+    const [password,setPassword]=useState({})
+
+          
+    const adminLogin = async ()=>{
+           
+
+       
+        } 
+    
+
+    // checkData()
 
   return (  
     <div>
         <nav>
-        <input type="text" placeholder="name "/>
-        <input type="text" placeholder="email "/>
-        <button onClick={adminClick}>submit</button>
+        <input onChange={e=>setEmail(e.target.value)} type="text" className="form-input" placeholder="email"/>
+        <input onChange={e=>setPassword(e.target.value)} type="password" className="form-input" placeholder="password"/>
+        <button onClick={adminLogin}>submit</button>
         </nav>
         
         
     <div>
-    <Questions/>
     </div>
     </div>
   )
