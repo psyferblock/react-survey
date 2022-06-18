@@ -1,14 +1,22 @@
-import React from 'react'
-import '../App.css';
+// import React from 'react'
+// import '../App.css';
+// import Questions from './Questions';
 
 
-export default function NavBarAdmin() {
+// export default function NavBarAdmin() {
 
-  return (
-    <div>
-        <input type="text" placeholder="name "></input>
-        <input type="text" placeholder="email "></input>
-        <button>submit</button>
-    </div>
-  )
-}
+//   return (  
+//     <div>
+//         <nav>
+//         <input type="text" placeholder="name "/>
+//         <input type="text" placeholder="email "/>
+//         <button>submit</button>
+//         </nav>
+        
+        
+//     <div>
+//     <Questions/>
+//     </div>
+//     </div>
+//   )
+// }

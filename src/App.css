@@ -30,3 +30,22 @@
   margin:10px;
 
 }
+/* questions for admin to fill design */
+.form-layout{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width:40vw;
+
+}
+.form-question{
+display: block;
+}
+.form-input{
+display:block
+}
+.form-button{
+  display: block;
+  font-family: "karla",sans-serif;
+
+}

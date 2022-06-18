@@ -1,16 +1,16 @@
 import React from 'react'
 import '../App.css';
 
-import NavBarAdmin from './NavBarAdmin'
-import NavBarUser from './NavBarUser'
-import Questions from './Questions';
+import NavBarAdmin from '../components/NavBarAdmin';
+import NavBarUser from '../components/NavBarUser';
+import Questions from '../components/Questions';
 
 import { useState } from 'react';
 
 export default function NavBar() {
 
 
-    const [navBar,getNavbar] =useState()
+    const [navBar,getNavbar] =useState("null")
 
    
 
@@ -31,21 +31,7 @@ export default function NavBar() {
                 </ul>
             </div>
         </header>
-        <div className="main-body">
-            
-            <div>
-                <ul>
-                <input>question</input>
-                <input>answer option</input>
-                <input>answer option</input>
-                <input>answer option</input>
-                <input>answer option</input>
-
-                <button>submit</button>
-                </ul>
-            </div>
-
-        </div>
+        
     </>
   )
 }
