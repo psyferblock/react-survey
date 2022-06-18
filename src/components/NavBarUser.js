@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import '../App.css';
+
 
 export default function NavBarUser() {
   return (
-    <div>
-        <ul>
-            <input> name </input>
-            <input>password</input>
-        </ul>
-    </div>
+    <>
+    <input type="text" placeholder="name "></input>
+    <input type="text" placeholder="email "></input>
+    <button>submit</button>
+     
+    
+    </>
   )
 }

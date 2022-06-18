@@ -1,13 +1,14 @@
 import React from 'react'
+import '../App.css';
+
 
 export default function NavBarAdmin() {
 
   return (
     <div>
-        <ul>
-            <input> email </input>
-            <input>password</input>
-        </ul>
+        <input type="text" placeholder="name "></input>
+        <input type="text" placeholder="email "></input>
+        <button>submit</button>
     </div>
   )
 }
