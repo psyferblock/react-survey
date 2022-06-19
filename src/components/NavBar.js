@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 import NavBarAdmin from '../components/NavBarAdmin';
 import NavBarUser from '../components/NavBarUser';
@@ -9,7 +10,7 @@ import Main from '../components/Main'
 
 
 export default function NavBar() {
-
+let navigate=useNavigate(); 
 
     const [navBar,getNavbar] =React.useState("something dude")
     console.log(React.useState())
@@ -25,9 +26,9 @@ export default function NavBar() {
             <div >       
                 <ul className="nav-ul">
                     <li>
-                       <button onClick={()=>{getNavbar(<NavBarUser/>)}}> user survey</button> 
+                       <button onClick={()=>{navigate("/user-page")}}> user survey</button> 
                     </li>
-                    <li><button onClick={()=>{getNavbar(<NavBarAdmin/>)}}>admin </button></li>
+                    <li><button onClick={()=>{navigate("/admin-page")}}>admin </button></li>
                     <li>
                         <button>submit</button>
                     </li>     
