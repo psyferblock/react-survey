@@ -11,24 +11,24 @@ export default function Questions() {
 
 
      async function questionSubmit(){
-      const url = "http://127.0.0.1:8000/v1/admin/login"
-      const sendQuestions= await fetch(url),{
-        method:"post",
-        headers:{
-          "content-type":"application/jason",
-        },body:JSON.stringify({
-          "question":question,
-          "answer1":answer1,
-          "answer2":answer2,
-          "answer3":answer3,
-          "answer4":answer4,
-        });
-        const data= await res.json()
-        console.log(data)
+    //   const url = "http://127.0.0.1:8000/v1/admin/login"
+    //   const sendQuestions= await fetch(url),{
+    //     method:"post",
+    //     headers:{
+    //       "content-type":"application/jason",
+    //     },body:JSON.stringify({
+    //       "question":question,
+    //       "answer1":answer1,
+    //       "answer2":answer2,
+    //       "answer3":answer3,
+    //       "answer4":answer4,
+    //     });
+    //     const data= await res.json()
+        console.log("data")
 
 
-      }
-        console.log(question,answer1,answer2,answer3,answer4)
+    //   }
+    //     console.log(question,answer1,answer2,answer3,answer4)
 
     }
    
