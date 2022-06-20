@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  border: 1px solid;
+}
+.nav-bar{
+  margin:10px;
+  padding:10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(85, 146, 146);
+  background: linear-gradient(90deg,rgb(85, 146, 146) 1%,cyan 100%);
+
+}
+.nav-ul{
+  display: flex;
+  list-style:none;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.nav-ul > li{
+ margin:10px;
+}
+
+.main-body{
+  width:95vw;
+  height: 100vh;
+  border: 1px solid black;
+  padding:5px;
+  margin:10px;
+
+}
+/* questions for admin to fill design */
+.form-layout{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width:40vw;
+
+}
+.form-question{
+display: block;
+}
+.form-input{
+display:block
+}
+.form-button{
+  display: block;
+  font-family: "karla",sans-serif;
+  background: linear-gradient(90deg,rgb(147, 30, 154) 1%,rgb(173, 140, 176) 100%);
+
+
+}
+.button{
+  width: 100px;
+  height:20px;
+}
