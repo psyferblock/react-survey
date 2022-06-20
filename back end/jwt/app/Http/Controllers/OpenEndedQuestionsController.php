@@ -12,7 +12,7 @@ class OpenEndedQuestionsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getQuestion(Request $request)
+    public function addQuestionOpenEnded(Request $request)
     {
         $question=New OpenEndedQuestions();
         $question->question=$request->question;
