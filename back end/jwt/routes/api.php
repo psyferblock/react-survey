@@ -4,6 +4,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminQuestionController;
 use App\Http\Controllers\AdminSurveyController;
+use App\Http\Controllers\MultipleChoiceQuestionController;
+use App\Http\Controllers\OpenEndedQuestionsController;
+
 
 
 
@@ -20,6 +23,9 @@ use App\Http\Controllers\AdminSurveyController;
 
 Route::post('/add_survey', [AdminSurveyController::class, 'addSurvey']);
 Route::post('/add_question_radio', [AdminQuestionController::class, 'addQuestionRadio']);
+Route::post('/add_question_multiple_choice', [AdminQuestionController::class, 'addQuestionMultipleChoice']);
+Route::post('/add_question_open_ended', [AdminQuestionController::class, 'addQuestionOpenEnded']);
+
 
 
 Route::group(['middleware' => 'api'], function($router) {
